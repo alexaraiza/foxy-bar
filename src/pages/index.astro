@@ -10,6 +10,16 @@ import Layout from '../layouts/Layout.astro';
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION} >
   <Hero />
   <Photos />
-  <Location />
-  <Contact />
+  <div class="container">
+    <Location />
+    <Contact />
+  </div>
 </Layout>
+<style>
+  @media screen and (min-width: 768px) {
+    .container {
+      display: grid;
+      grid: auto auto 1fr / 1fr 1fr;
+    }
+  }
+</style>
