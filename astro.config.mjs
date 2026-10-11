@@ -6,7 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alexaraiza.github.io',
-  base: '/foxybar',
+  base: '/foxy-bar',
   integrations: [sitemap()],
   fonts: [
     {
